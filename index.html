@@ -1,161 +1,81 @@
-<!-- <--Kirori Mal College Webpage Code : -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kmc webpage</title>
-    <img src="https://th.bing.com/th?id=OIP.durdPivb-KC6BE85K2DWvQAAAA&w=159&h=158&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-        width="100" height="100" align=left>
-    <img src="https://th.bing.com/th?id=OIP.lci82qdYYaFYGYnL_Ix86QHaGj&w=265&h=235&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-        width="160" height="100" align=right>
-
-    <center>
-        <h1 id="main">KIRORI MAL COLLEGE</h1>
-    </center>
-    <center>
-        <h2 id="temp"> Department Of Computer Science</h2>
-    </center>
-    <h1> </h1>
-    <hr>
-    <hr>
-    <style>
-        #main {
-            color: rgb(20, 19, 19);
-            background-color: rgb(99, 132, 181);
-            font-weight: bold;
-            border-bottom: 8px solid rgb(193, 216, 236);
-            margin-left: 350px;
-            margin-right: 350px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            border-radius: 20px;
-        }
-
-        #temp {
-            color: black;
-
-            margin-left: 350px;
-            margin-right: 350px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            border-radius: 20px;
-        }
-
-        .navbar {
-
-            overflow: hidden;
-
-            background-color: #333;
-        }
-
-        .navbar a {
-
-            float: left;
-
-            font-size: 16px;
-
-            color: white;
-
-            text-align: center;
-
-            padding: 14px 16px;
-
-            text-decoration: none;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: rgba(255, 255, 255, 0.925);
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
-
-        .navbar a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: red;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
+    <!-- --------------Cursor------------------------- -->
+<div class="cursor-dot" data-cursor-dot></div>
+<div class="cursor-outline" data-cursor-outline></div>
+<!-- -------------------------------------------------- -->
 
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Exams
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#physics">Physics</a>
-                <a href="#computer">Computer Science</a>
-                <a href="#maths">Maths</a>
-                <a href="#frontend">Front End Web Development</a>
-            </div>
+<!-- ---------------------Header----------------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+         <img src="./images/s2_logo.png" class="logo">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+         </ul>
+        </nav>
+        <div class="header-text">
+            <p>WebPage Developer</p>
+            <h1>Hi I'm <span>Shivam</span><br>From Haryana</h1>    
         </div>
+    </div>
+</div>
+<!-- --------------------------------------------------- -->
 
-
-        <div class="dropdown">
-            <button class="dropbtn">Menu
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="faculty.html">Faculty</a>
-                <a href="form.html">Form</a>
-                <a href="#Activity">Activities</a>
+<!-- -----------------About--------------------------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" >
             </div>
-        </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I'm Shivam, a passionate webpage developer and Programmer. With continue learning of experience, I specialize in webpage development, backend programming in python and c++. Currently pursuing B.sc(Hons) Computer Science from Kirorimal College, University of Delhi. Beyond work, I enjoy Sports like Volleyball, Badminton, Basketball etc. and believe in Physical Fitness. Committed to growth and innovation, I'm eager to contribute to my skills. Connect with me for insights and more about me..</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills" >
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Webpage Designer</span><br>Web app Development</li>
+                        <li><span>Programmer</span><br>Making python and c++ programs</li>
 
-        <div class="dropdown">
-            <button class="dropbtn">Administration
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#principal">Principal</a>
-                <a href="#helpline">Helpline Number</a>
-                <a href="#staff">Administrative Staff</a>
-                <a href="#alumni">Alumni</a>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2023-Current</span><br>Learning python Programming and Computer System Architecture</li>
+                                <li><span>2023-Current</span><br>Project holding in frontend Development</li>
+                                <li><span>2022-Current</span><br>Learning Data Structure and Frontend Development.</li>
+                            </ul>
+
+                                <div class="tab-contents" id="Education">
+                                    <ul>
+                                        <li><span>10th Class</span><br>Roseland Internation School. 1st Std</li>
+                                        <li><span>12th Class</span><br>Roseland Internation School. 1st Std With Science Stream</li>
+                                        <li><span>Graduation</span><br>B.sc(Hons) Computer Science from Kirorimal College</li>
+                                    </ul>
+
+                    </ul>   
+                </div>
             </div>
         </div>
     </div>
-    <img src="https://th.bing.com/th/id/OIP.H_K6ynduK-_kl-ZERS_rMQHaEO?pid=ImgDet&rs=1" width="1217" height="400">
+</div>
+<!-- -------------------------------------------------------- -->
 </body>
-
 </html>
