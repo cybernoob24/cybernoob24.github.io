@@ -20,13 +20,15 @@
     <div class="container">
         <nav>
          <img src="./s2_logo.png" class="logo">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contacts</a></li>
+         <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
          </ul>
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>WebPage Developer</p>
@@ -115,6 +117,7 @@
                     <h3>Social Media Handeling</h3>
                     <p>currently managing many of social media apps. such as Instagram,Youtube,linkedIn for college Societies.</p>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -137,7 +140,38 @@
         <a href="#" class="btn">See More</a>
     </div>
 </div>
-
 <!-- ---------------------------------------------------------- -->
+
+<!-- ---------------------Contacts------------------------------ -->
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>   8843shivam@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>   8168005082</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100022583924424"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/itz_shivam7356/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shivam-soni-b15373237/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.snapchat.com/add/shivam.soni2216?share_id=r9hsZyjftf0&locale=en-GB"><i class="fa-brands fa-square-snapchat"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder=" Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ----------------------------------------------------------- -->
 </body>
 </html>
